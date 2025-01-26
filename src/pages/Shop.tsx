@@ -84,13 +84,6 @@ export type ShopItem = {
     ts: number;
 }
 
-export type InventoryItem = {
-    id: string,
-    name: string,
-    src: string,
-    ts: number
-}
-
 export type ShopResponse = {
     status: number,
     message: string,
