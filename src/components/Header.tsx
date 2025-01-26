@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import './Header.css'
 
 export default function Header({ page }: HeaderProps) {
@@ -14,19 +15,19 @@ export default function Header({ page }: HeaderProps) {
                     </div>
                     <div className="nav">
                         <div className={highlightWhenActive(page, 'home')}>
-                            <a href="/">
+                            <Link to="/">
                                 <p>Home</p>
-                            </a>
+                            </Link>
                         </div>
                         <div className={highlightWhenActive(page, 'shop')}>
-                            <a href="/shop">
+                            <Link to="/shop">
                                 <p>Shop</p>
-                            </a>
+                            </Link>
                         </div>
                         <div className={highlightWhenActive(page, 'info')}>
-                            <a href="/info">
+                            <Link to="/info">
                                 <p>Info</p>
-                            </a>
+                            </Link>
                         </div>
                         <div>
                             <a href="https://discord.gg/DkWhBCv" target="_blank">

@@ -2,7 +2,7 @@
   "name": "cookie-web",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://veeru153.github.io/cookie-web",
+  "homepage": "https://veeru153.github.io/cookie-web/#",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",

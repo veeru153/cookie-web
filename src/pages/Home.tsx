@@ -1,4 +1,7 @@
 import './Home.css'
+import sign from '../assets/sign.svg'
+import yuqi from '../assets/yuqi.png'
+import cookie from '../assets/cookie.svg'
 import Header from "../components/Header"
 
 export default function Home() {
@@ -8,7 +11,7 @@ export default function Home() {
             <div className="home">
                 <div className="intro">
                     <div className="img-wrapper">
-                        <img src="/assets/cookie.svg" alt="Cookie" />
+                        <img src={cookie} alt="Cookie" />
                     </div>
                     <div className="text">
                         <p>Welcome to Yuqi's Cookie House 🍪!</p>
@@ -22,10 +25,10 @@ export default function Home() {
                 <h1>Who is Yuqi?</h1>
                 <div className="facts">
                     <div className="img-wrapper">
-                        <img src="/assets/yuqi.png" alt="Yuqi" />
+                        <img src={yuqi} alt="Yuqi" />
                     </div>
                     <div className="content">
-                        <img src="/assets/sign.svg" alt="Signature" />
+                        <img src={sign} alt="Signature" />
                         <p><b>Song Yuqi - 宋雨琦 - 송우기</b></p>
                         <p><b>Position</b><br />Lead Vocalist, Lead Dancer</p>
                         <p><b>Birthday</b><br />September 23, 1999</p>
