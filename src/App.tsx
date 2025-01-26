@@ -11,7 +11,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/shop' element={<Shop />} />
         <Route path='/info' element={<Info />} />
-        <Route path='/user/:id' element={<Shop />} />
+        <Route path='/user/:id' element={<Shop userPage />} />
         {/* <Route path='*' element={<Error404 />} /> */}
       </Routes>
     </BrowserRouter>
