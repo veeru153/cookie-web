@@ -13,8 +13,9 @@ export default function Shop({ userPage = false }: ShopProps) {
     useEffect(() => {
         async function fetchShopItems() {
             try {
-                const url = userPage ? `http://localhost:3000/user/${userId}/json` : `http://localhost:3000/shop/json`
-                const res = await fetch(url);
+                const BASE_URL = "https://cookie-pw1t.onrender.com/"
+                const url = userPage ? `/user/${userId}/json` : `/shop/json`;
+                const res = await fetch(BASE_URL + url);
                 const shopItems = await res.json() as ShopResponse;
                 if (shopItems.status === 200) {
                     setItems(shopItems.data);
