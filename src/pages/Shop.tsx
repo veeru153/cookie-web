@@ -14,7 +14,7 @@ export default function Shop({ userPage = false }: ShopProps) {
         async function fetchShopItems() {
             try {
                 const BASE_URL = "https://cookie-pw1t.onrender.com"
-                const url = userPage ? `/user/${userId}/json` : `/shop/json`;
+                const url = userPage ? `/user/${userId}` : `/shop`;
                 const res = await fetch(BASE_URL + url);
                 const shopItems = await res.json() as ShopResponse;
                 if (shopItems.status === 200) {
