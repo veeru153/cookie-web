@@ -13,7 +13,7 @@ export default function Shop({ userPage = false }: ShopProps) {
     useEffect(() => {
         async function fetchShopItems() {
             try {
-                const BASE_URL = "https://cookie-pw1t.onrender.com"
+                const BASE_URL = "https://onefiftythree.onrender.com/cookie"
                 const url = userPage ? `/user/${userId}` : `/shop`;
                 const res = await fetch(BASE_URL + url);
                 const shopItems = await res.json() as ShopResponse;
